@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="description" content="김한솔의 프로필 페이지입니다.">
+
     <title>김한솔의 홈페이지에 오신 것을 환영합니다.</title>
     <script src="./main.js"></script>
     
@@ -26,7 +29,25 @@
     	
     	 #myinfo {
     		border-bottom: 10px solid #ff0000;
-    	}
+    		font-size: 1.5em; /* 150% */
+    		text-align: left;
+    	 }
+    	 
+    	 	#myinfo ul {
+    	 		list-style: square;
+    	 		margin-left: 180px;
+    	 	}
+    	
+			    	#myinfo > ul > li > span.label {
+			    		text-decoration: underline;
+			    	}
+			    	
+			    	#myinfo > ul > li > span.content {
+			    		font-weight: bold;
+			    	}
+   
+    	   	
+    	
     </style>
 </head>
 <body>
@@ -35,7 +56,24 @@
 		</div>
 		
 		<div id="myinfo">
-			아마도 우리의 개인정보가 여기에...
+			<ul>
+				<li><span class="label">이름</span>
+					 <span class="content">김한솔</span>
+				</li>
+				
+				<li><span class="label">이메일</span>
+					 <span class="content">02hh@naver.com</span>
+				</li>
+				
+				<li><span class="label">취미</span>
+					 <span class="content">개발..?</span>
+				</li>
+				
+				<li><span class="label">페이스북</span>
+					 <a href="facebook.com/hansol214" target="_blank">http://facebook.com/hansol214</a>
+				</li>
+				
+			</ul>
 		</div>
 		
 </body>
